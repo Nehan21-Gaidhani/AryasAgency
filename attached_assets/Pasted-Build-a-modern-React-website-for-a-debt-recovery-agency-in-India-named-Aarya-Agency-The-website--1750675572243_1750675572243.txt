@@ -1,0 +1,89 @@
+Build a modern React website for a debt recovery agency in India named "Aarya Agency".
+
+The website must follow a luxurious and trustworthy color palette of:
+
+Gold #C49A42 (primary – buttons, highlights, headings)
+
+Off-white #FAF8F1 (background)
+
+White #FFFFFF (cards and content blocks)
+
+Charcoal #2B2B2B (text)
+
+Warm Gray #D6D3CE (borders and subtle shadows)
+
+Pages to include:
+Home Page
+
+Services Page
+
+About Us Page
+
+🏠 Home Page:
+Hero section with large headline:
+“Aarya Agency – Trusted Recovery Partner Since 2009”
+
+Tagline below: “Recovering loans. Rebuilding trust. 15 years strong.”
+
+Short paragraph introduction about the agency’s mission and national operations.
+
+Animated Counter/Meter to show amount recovered: “₹1200+ Crore Recovered Nationwide”
+
+The meter should be gold with smooth animation
+
+Section showcasing recovery methods:
+
+Legal Recovery Support
+
+Telephonic Follow-Ups
+
+Field Visit Teams
+
+Digital Monitoring Tools
+
+NBFC and Bank Partnerships
+
+CTA Button: “Recover with Us” (in gold with hover effect)
+
+🧾 Services Page:
+Display services in modern white cards with gold icons or borders:
+
+Corporate Loan Recovery
+
+Personal Loan Recovery
+
+Cheque Bounce Follow-Up
+
+Legal Action Support
+
+Bank/NBFC Collection Support
+
+Each service should have a short 1–2 sentence description.
+
+👥 About Us Page:
+Brief history:
+“Founded in 2009, Aarya Agency has over 15 years of experience in debt recovery across India.”
+
+Statistics section with large gold numbers:
+
+₹1200+ Crore Recovered
+
+50+ Professional Agents
+
+Pan-India Coverage
+
+Mission Statement:
+“To provide ethical, effective, and timely loan recovery services with full transparency and trust.”
+
+Add 2–3 fake testimonials in a clean card layout.
+
+🖥 Technical Requirements:
+Use React and React Router for page navigation.
+
+Use CSS Modules or Tailwind CSS (optional) to style with the above palette.
+
+Ensure responsive design for desktop and mobile.
+
+Add a modern footer with contact placeholder and social icons (styled in gold).
+
+Use Google Fonts for a modern, clean font like Poppins 

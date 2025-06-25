@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(0, 0%, 16%);
+  --muted: hsl(0, 0%, 96%);
+  --muted-foreground: hsl(0, 0%, 45%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(0, 0%, 16%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(0, 0%, 16%);
+  --border: hsl(0, 0%, 90%);
+  --input: hsl(0, 0%, 90%);
+  --primary: hsl(0, 72%, 21%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(0, 0%, 96%);
+  --secondary-foreground: hsl(0, 0%, 16%);
+  --accent: hsl(0, 33%, 85%);
+  --accent-foreground: hsl(0, 72%, 21%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(0, 72%, 21%);
+  --radius: 0.5rem;
+  
+  /* Custom Aarya Agency Colors */
+  --deep-burgundy: hsl(0, 72%, 21%);
+  --soft-pink: hsl(0, 33%, 85%);
+  --cream-white: hsl(0, 0%, 100%);
+  --charcoal-text: hsl(0, 0%, 16%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(208, 100%, 8%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased;
+    font-family: 'Poppins', sans-serif;
+    background: #FFFDFD;
+    color: #2A2A2A;
+  }
+}
+
+@layer utilities {
+  .burgundy-glow:hover {
+    box-shadow: 0 0 20px rgba(75, 26, 26, 0.3);
+    transform: translateY(-2px);
+  }
+  
+  .counter-animation {
+    background: linear-gradient(135deg, #BA0000 0%, #ff8686 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .service-card:hover {
+    border-color: #4B1A1A;
+    box-shadow: 0 10px 30px rgba(75, 26, 26, 0.1);
+  }
+  
+  .hero-section {
+    background: #4B1A1A;
+    color: #FFE7E7;
+  }
+  
+  .floating-navbar {
+    background: white;
+    box-shadow: 0 -5px 15px -3px rgba(0, 0, 0, 0.05), 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .floating-navbar:hover {
+    box-shadow: 0 -8px 20px -3px rgba(0, 0, 0, 0.08), 0 15px 35px -5px rgba(0, 0, 0, 0.15), 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+  }
+}
