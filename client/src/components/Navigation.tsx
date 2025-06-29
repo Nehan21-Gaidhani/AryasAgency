@@ -11,6 +11,7 @@ export default function Navigation() {
     { name: "Home", path: "/" },
     { name: "Services", path: "/services" },
     { name: "About Us", path: "/about" },
+    // Removed "Contact" here to avoid duplication
   ];
 
   const isActive = (path: string) => {
@@ -25,7 +26,7 @@ export default function Navigation() {
           <div className="flex-shrink-0">
             <Link href="/">
               <h2 className="text-xl font-bold text-[#4B1A1A] cursor-pointer">
-                Aarya Agency
+                Aryas Agency
               </h2>
             </Link>
           </div>
@@ -47,9 +48,13 @@ export default function Navigation() {
                 </Link>
               ))}
             </div>
-            <Button className="bg-[#BA0000] text-[#fceeee] px-6 border-2 border-[#BA0000] py-2 rounded-lg hover:bg-[#FFE7E7] hover:text-[#BA0000] hover:border-[#BA0000] transition-colors duration-200">
-              Contact
-            </Button>
+
+            {/* Contact Button (now acts as a link) */}
+            <Link href="/contact">
+              <Button className="bg-[#BA0000] text-[#fceeee] px-6 border-2 border-[#BA0000] py-2 rounded-lg hover:bg-[#FFE7E7] hover:text-[#BA0000] hover:border-[#BA0000] transition-colors duration-200">
+                Contact
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -83,10 +88,17 @@ export default function Navigation() {
                   </span>
                 </Link>
               ))}
+
+              {/* Mobile Contact Button */}
               <div className="pt-2">
-                <Button className="w-full bg-[#4b1a1a] text-[#fceeee] hover:bg-[#FFE7E7]">
-                  Contact
-                </Button>
+                <Link href="/contact">
+                  <Button
+                    className="w-full bg-[#4b1a1a] text-[#fceeee] hover:bg-[#FFE7E7] hover:text-[#BA0000]"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Contact
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

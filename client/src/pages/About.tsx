@@ -5,21 +5,21 @@ import TestimonialCard from "@/components/TestimonialCard";
 export default function About() {
   const testimonials = [
     {
-      quote: "Aarya Agency's professional approach and ethical practices helped us recover significant amounts while maintaining our client relationships. Highly recommended!",
+      quote: "Aryas Agency's professional approach and ethical practices helped us recover significant amounts while maintaining our client relationships. Highly recommended!",
       name: "Rajesh Kumar",
       position: "CEO, Mumbai Finance",
       imageUrl:
         "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&h=100",
     },
     {
-      quote: "The transparency and regular updates provided by Aarya Agency made our partnership seamless. Excellent recovery rates and professional service.",
+      quote: "The transparency and regular updates provided by Aryas Agency made our partnership seamless. Excellent recovery rates and professional service.",
       name: "Priya Sharma",
       position: "Director, Delhi NBFC",
       imageUrl:
         "https://images.unsplash.com/photo-1494790108755-2616b612b776?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&h=100",
     },
     {
-      quote: "15 years of consistent service and ethical practices. Aarya Agency has been our trusted partner for debt recovery across multiple states.",
+      quote: "15 years of consistent service and ethical practices. Aryas Agency has been our trusted partner for debt recovery across multiple states.",
       name: "Amit Patel",
       position: "Manager, Gujarat Bank",
       imageUrl:
@@ -37,9 +37,9 @@ export default function About() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-3xl md:text-4xl font-bold text-[#2A2A2A] mb-6">About Aarya Agency</h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-[#2A2A2A] mb-6">About Aryas Agency</h1>
             <p className="text-lg text-[#2A2A2A] font-light mb-6 leading-relaxed">
-              Founded in 2009, Aarya Agency has over 15 years of experience in debt recovery across India. We have built our reputation on ethical practices, transparent processes, and consistent results.
+              Founded in 2009, Aryas Agency has over 15 years of experience in debt recovery across India. We have built our reputation on ethical practices, transparent processes, and consistent results.
             </p>
             <p className="text-lg text-[#2A2A2A] font-light mb-8 leading-relaxed">
               Our journey began with a simple mission: to bridge the gap between lenders and borrowers through professional, respectful, and effective recovery services. Today, we stand as one of India's most trusted recovery partners.
@@ -76,20 +76,20 @@ export default function About() {
 
         {/* Owner Section */}
         <motion.div
-          className="mb-20 flex flex-col lg:flex-row items-center gap-8"
+          className="mb-20 flex flex-col lg:flex-row items-center gap-8 "
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
           <img
-            src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?auto=format&fit=crop&w=300&h=300"
+            src="/assets/ownerpic.jpg"
             alt="Owner"
-            className="w-80 h-80 rounded-full object-cover shadow-2xl"
+            className="w-80 h-80 rounded-full object-cover object-top shadow-2xl"
           />
           <div className="text-center lg:text-left max-w-2xl">
-            <h3 className="text-3xl font-bold text-[#2A2A2A] mb-4">Mr. Aarya</h3>
+            <h3 className="text-3xl font-bold text-[#2A2A2A] mb-4">Mr. Aryas</h3>
             <p className="text-[#2A2A2A] text-lg font-light leading-relaxed">
-              Founder and Managing Director of Aarya Agency, Mr. Aarya brings over 20 years of experience in the finance and recovery sector. Known for his ethical approach and visionary leadership, he has built a nationwide reputation for trust and results.
+              Founder and Managing Director of Aryas Agency, Mr. Aryas brings over 20 years of experience in the finance and recovery sector. Known for his ethical approach and visionary leadership, he has built a nationwide reputation for trust and results.
             </p>
           </div>
         </motion.div>
