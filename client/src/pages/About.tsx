@@ -87,9 +87,9 @@ export default function About() {
             className="w-80 h-80 rounded-full object-cover object-top shadow-2xl"
           />
           <div className="text-center lg:text-left max-w-2xl">
-            <h3 className="text-3xl font-bold text-[#2A2A2A] mb-4">Mr. Aryas</h3>
+            <h3 className="text-3xl font-bold text-[#2A2A2A] mb-4">Mr. Rahul Vaidya</h3>
             <p className="text-[#2A2A2A] text-lg font-light leading-relaxed">
-              Founder and Managing Director of Aryas Agency, Mr. Aryas brings over 20 years of experience in the finance and recovery sector. Known for his ethical approach and visionary leadership, he has built a nationwide reputation for trust and results.
+              Founder and Managing Director of Aryas Agency, Mr. Rahul Vaidya brings over 20 years of experience in the finance and recovery sector. Known for his ethical approach and visionary leadership, he has built a nationwide reputation for trust and results.
             </p>
           </div>
         </motion.div>
