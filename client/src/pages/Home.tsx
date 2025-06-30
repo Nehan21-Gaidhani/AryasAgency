@@ -97,7 +97,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <img
-                src="./public/assets/Group 9.png"
+                src="./assets/Group 9.png"
                 alt="Professional business meeting"
                 className="w-full max-w-[900px] mx-auto h-auto rounded-2xl"
               />
