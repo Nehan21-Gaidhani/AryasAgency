@@ -48,10 +48,23 @@ export default function Contact() {
               <div>
                 <h4 className="text-lg font-semibold">Address</h4>
                 <p>
-                  S-9, 2nd Floor, Above Post Office, Vali Manzil,<br />
-                  Kamptee Road, Gaddigodam Square,<br />
-                  Nagpur - 440001
+                  Zero Mile Associate Fourth Floor,<br />
+                  House No.268/K, Plot No.2, Shreya Infra Tower,<br />
+                  Hanuman Gali, Sitabuldi, Nagpur,<br />
+                  Maharashtra 440012
                 </p>
+
+                {/* Locations across India - inline bullets */}
+                <div className="mt-4">
+                  <p className="font-semibold mb-1">Locations across India</p>
+                  <p className="flex flex-wrap gap-4 text-sm">
+                    <span>• Nagpur – Head Office</span>
+                    <span>• Pune</span>
+                    <span>• Nashik</span>
+                    <span>• Ahmedabad</span>
+                    <span>• Bangalore</span>
+                  </p>
+                </div>
               </div>
             </div>
           </motion.div>

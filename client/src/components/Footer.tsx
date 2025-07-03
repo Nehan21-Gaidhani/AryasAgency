@@ -4,9 +4,10 @@ export default function Footer() {
   return (
     <footer className="bg-[#BA0000] text-[#FFFFFF] py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Top grid section */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           
-          {/* Left Section - About */}
+          {/* About Section */}
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-2xl font-bold text-[#FFFFFF] mb-4">Aryas Agency</h3>
             <p className="text-[#FFFFFF] opacity-80 font-light mb-6 leading-relaxed">
@@ -28,7 +29,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Middle - Quick Links */}
+          {/* Quick Links */}
           <div>
             <h4 className="text-lg font-semibold text-[#FFFFFF] mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
@@ -39,11 +40,10 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Right - Contact Info */}
+          {/* Contact Info */}
           <div>
             <h4 className="text-lg font-semibold text-[#FFFFFF] mb-4">Contact Info</h4>
             <div className="space-y-3 text-[#FFFFFF] opacity-80 text-sm leading-relaxed">
-              
               <div className="flex items-center">
                 <Phone className="text-[#FFFFFF] mr-3" size={16} />
                 <span>+91 90969 16310 / +91 90497 54164</span>
@@ -57,17 +57,29 @@ export default function Footer() {
               <div className="flex items-start">
                 <MapPin className="text-[#FFFFFF] mr-3 mt-1" size={16} />
                 <span>
-                  S-9, 2nd Floor, Above Post Office, Vali Manzil,<br />
-                  Kamptee Road, Gaddigodam Square, Nagpur - 440001
+                  Zero Mile Associate Fourth Floor,<br />
+                  House No.268/K, Plot No.2, Shreya Infra Tower,<br />
+                  Hanuman Gali, Sitabuldi, Nagpur,<br />
+                  Maharashtra 440012
                 </span>
               </div>
-
             </div>
           </div>
-
         </div>
 
-        {/* Bottom copyright section */}
+        {/* Locations Block - full width, left aligned */}
+        <div className="mt-12">
+          <h4 className="text-lg font-semibold text-[#FFFFFF] mb-2">Locations across India</h4>
+          <p className="flex flex-wrap gap-4 text-sm text-[#FFFFFF] opacity-80">
+            <span>• Nagpur – Head Office</span>
+            <span>• Pune</span>
+            <span>• Nashik</span>
+            <span>• Ahmedabad</span>
+            <span>• Bangalore</span>
+          </p>
+        </div>
+
+        {/* Copyright */}
         <div className="border-t border-[#F5C6C6] mt-12 pt-8 text-center">
           <p className="text-[#FFE7E7] opacity-80 font-light text-sm">
             © 2024 Aryas Agency. All rights reserved. | Proprietor: Rahul Vaidya
