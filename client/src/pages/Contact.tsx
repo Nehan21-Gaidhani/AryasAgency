@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Map ,Globe } from "lucide-react"; // <-- Added `Map`
 
 export default function Contact() {
   return (
     <div className="bg-[#FFFDFD] overflow-x-hidden min-h-screen pt-24">
-      {/* Contact Hero Section */}
       <section className="py-20 bg-[#fceeee]">
         <div className="max-w-4xl mx-auto px-4 sm:px-8 lg:px-12">
+          {/* Hero */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -21,12 +21,14 @@ export default function Contact() {
             </p>
           </motion.div>
 
+          {/* Info Blocks */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-8 text-[#2A2A2A] text-base font-light max-w-xl mx-auto"
           >
+            {/* Phone */}
             <div className="flex items-start gap-4">
               <Phone className="text-[#BA0000]" size={24} />
               <div>
@@ -35,6 +37,7 @@ export default function Contact() {
               </div>
             </div>
 
+            {/* Email */}
             <div className="flex items-start gap-4">
               <Mail className="text-[#BA0000]" size={24} />
               <div>
@@ -43,6 +46,7 @@ export default function Contact() {
               </div>
             </div>
 
+            {/* Address */}
             <div className="flex items-start gap-4">
               <MapPin className="text-[#BA0000]" size={24} />
               <div>
@@ -53,18 +57,21 @@ export default function Contact() {
                   Hanuman Gali, Sitabuldi, Nagpur,<br />
                   Maharashtra 440012
                 </p>
+              </div>
+            </div>
 
-                {/* Locations across India - inline bullets */}
-                <div className="mt-4">
-                  <p className="font-semibold mb-1">Locations across India</p>
-                  <p className="flex flex-wrap gap-4 text-sm">
-                    <span>• Nagpur – Head Office</span>
-                    <span>• Pune</span>
-                    <span>• Nashik</span>
-                    <span>• Ahmedabad</span>
-                    <span>• Bangalore</span>
-                  </p>
-                </div>
+            {/* Locations across India */}
+            <div className="flex items-start gap-4">
+              <Globe className="text-[#BA0000]" size={24} />
+              <div>
+                <h4 className="text-lg font-semibold">Locations across India</h4>
+                <p className="flex flex-wrap gap-4 text-sm mt-1">
+                  <span>• Nagpur – Head Office</span>
+                  <span>• Pune</span>
+                  <span>• Nashik</span>
+                  <span>• Ahmedabad</span>
+                  <span>• Bangalore</span>
+                </p>
               </div>
             </div>
           </motion.div>
