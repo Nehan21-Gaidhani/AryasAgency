@@ -36,24 +36,25 @@ export default function Home() {
   return (
     <div className="bg-[#FFFDFD] overflow-x-hidden">
       {/* Hero Section */}
-      <section className="min-h-screen bg-[#fceeee] flex items-center">
-        <div className="max-w-7xl mx-auto w-full pt-[80px] px-4 md:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <section className="min-h-screen bg-[#ffffff] flex items-center">
+        <div className=" mx-auto w-full pt-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center px-8">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-4xl sm:text-4xl lg:text-7xl font-bold text-[#2A2A2A] mb-4 sm:mb-6 leading-tight">
+              <h1 className="text-4xl sm:text-4xl lg:text-7xl font-bold text-[#2A2A2A] mb-4 sm:mb-4 leading-tight">
                 Trusted Recovery Partner Since 2009
               </h1>
+
               <p className="text-base sm:text-lg lg:text-xl text-[#2A2A2A] mb-6 font-light">
                 Recovering loans. Rebuilding trust. 15 years strong.
               </p>
 
               {/* Animated Counter */}
               <motion.div
-                className="bg-[#FFFDFD] p-6 rounded-2xl shadow-lg border border-[#F5C6C6] mb-6"
+                className="bg-[#FFFfff] p-6 rounded-2xl shadow-[0_3px_6px_1px_rgba(0,0,0,0.1)] mb-6"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
@@ -61,16 +62,16 @@ export default function Home() {
                 <div className="text-center">
                   <div className="text-3xl md:text-5xl font-bold mb-2">
                     <AnimatedCounter
-                      targetValue={120}
+                      targetValue={300}
                       prefix="₹"
-                      suffix="+ Lakhs"
+                      suffix="+ Crores"
                       className="text-3xl md:text-5xl font-bold counter-animation"
                     />
                   </div>
                   <p className="text-[#2A2A2A] font-medium">Recovered Nationwide</p>
-                  <div className="w-full bg-[#BA0000] rounded-full h-2 mt-4">
+                  <div className="w-full bg-[#ffe9d9] rounded-full h-2 mt-4">
                     <motion.div
-                      className="bg-gradient-to-r from-[#F5C6C6] to-[#FFE7E7] h-2 rounded-full"
+                      className="bg-[#ff7000] h-2 rounded-full"
                       initial={{ width: 0 }}
                       animate={{ width: "85%" }}
                       transition={{ duration: 2, delay: 1 }}
@@ -84,7 +85,7 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
-                <Button className="bg-[#BA0000] text-[#FFE7E7] px-6 py-3 rounded-lg text-base sm:text-lg font-semibold hover:bg-[#4B1A1A]/90 transition-all duration-200">
+                <Button className="bg-[#ff7000] text-[#FFffff] px-6 py-3 rounded-lg text-base sm:text-lg font-semibold hover:bg-[#4B1A1A]/90 transition-all duration-200">
                   Recover with Us <ArrowRight className="ml-2" size={20} />
                 </Button>
               </motion.div>
@@ -102,7 +103,7 @@ export default function Home() {
                 className="w-full max-w-[900px] mx-auto h-auto rounded-2xl"
               />
               <motion.div
-                className="absolute bottom-[-1.5rem] right-[-1.5rem] p-4 sm:p-6 rounded-2xl shadow-lg text-[#BA0000] bg-white text-center w-28"
+                className="absolute bottom-[-1.5rem] right-[-0.5rem] p-4 sm:p-6 rounded-2xl shadow-lg text-[#ff7000] bg-white text-center w-28"
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 1 }}
