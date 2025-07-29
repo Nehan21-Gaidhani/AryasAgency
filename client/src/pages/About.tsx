@@ -5,7 +5,7 @@ import TestimonialCard from "@/components/TestimonialCard";
 export default function About() {
   const testimonials = [
     {
-      quote: "Aryas Agency's professional approach and ethical practices helped us recover significant amounts while maintaining our client relationships. Highly recommended!",
+      quote: "Aryas Agency's professional approach and ethical practices helped us recover significant amounts while maintaining our client relationships.",
       name: "Rajesh Kumar",
       position: "CEO, Mumbai Finance",
       imageUrl:
@@ -16,7 +16,7 @@ export default function About() {
       name: "Priya Sharma",
       position: "Director, Delhi NBFC",
       imageUrl:
-        "https://images.unsplash.com/photo-1494790108755-2616b612b776?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&h=100",
+        "https://www.google.com/url?sa=i&url=https%3A%2F%2Fgenerated.photos%2Ffaces%2Ffemale&psig=AOvVaw2N801tukQXEVIBfCDqr7zG&ust=1753896365557000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCMDw8PnK4o4DFQAAAAAdAAAAABAEhttps://images.generated.photos/egwAEXqDtshSECSoycCwyM23kbp-y13tYfxvEx3jnBc/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDI1Mjk3LmpwZw.jpg",
     },
     {
       quote: "15 years of consistent service and ethical practices. Aryas Agency has been our trusted partner for debt recovery across multiple states.",
@@ -47,7 +47,7 @@ export default function About() {
 
             {/* Mission Statement */}
             <motion.div
-              className="bg-[#FFFfff] p-6 rounded-xl border-l-4 border-[#4B1A1A]"
+              className="bg-[#FFFfff] p-6 rounded-xl border-l-4 shadow-[0_3px_6px_1px_rgba(0,0,0,0.1)] border-[#ff7000]"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
@@ -97,7 +97,7 @@ export default function About() {
 
         {/* Statistics Section */}
         <motion.div
-          className="bg-[#ffffff] rounded-3xl p-12 mb-20 shadow-lg text-black"
+          className="bg-[#ffffff] rounded-3xl p-12 mb-20 shadow-[0_3px_6px_1px_rgba(0,0,0,0.1)] text-black"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -107,18 +107,18 @@ export default function About() {
             <div>
               <div className="text-4xl md:text-6xl font-bold mb-2 ">
                 <AnimatedCounter
-                  targetValue={120}
+                  targetValue={300}
                   prefix="₹"
                   suffix="+"
                   className=""
                 />
               </div>
-              <div className="text-xl">Lakhs Recovered</div>
+              <div className="text-xl">Crores Recovered</div>
             </div>
             <div>
               <div className="text-4xl md:text-6xl font-bold mb-2">
                 <AnimatedCounter
-                  targetValue={50}
+                  targetValue={300}
                   suffix="+"
                   className=""
                 />

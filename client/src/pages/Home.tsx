@@ -103,7 +103,7 @@ export default function Home() {
                 className="w-full max-w-[900px] mx-auto h-auto rounded-2xl"
               />
               <motion.div
-                className="absolute bottom-[-1.5rem] right-[-0.5rem] p-4 sm:p-6 rounded-2xl shadow-lg text-[#ff7000] bg-white text-center w-28"
+                className="absolute bottom-[-1.5rem] right-[-0.5rem] p-4 sm:p-6 rounded-2xl shadow-[0_3px_6px_1px_rgba(0,0,0,0.1)] text-[#ff7000] bg-white text-center w-28"
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 1 }}
@@ -117,7 +117,7 @@ export default function Home() {
       </section>
 
       {/* Recovery Methods Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#ffe9d9]">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
           <motion.div
             className="text-center mb-16"
@@ -139,13 +139,14 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <div className="bg-[#FFFDFD] p-6 md:p-8 rounded-2xl border border-[#F5C6C6] hover:border-[#ba0000] transition-all duration-300 h-full flex flex-col justify-start">
+                <div className="bg-[#FFFDFD] p-6 md:p-8 rounded-2xl border-2 border-[#Ffffff] hover:border-[#ff7000] transition-all duration-300 h-full flex flex-col justify-start">
                   <div className="text-[#4B1A1A] mb-4">
-                    <method.icon size={48} />
+                    <method.icon size={48} color="#ff7000" />
                   </div>
                   <h3 className="text-xl font-semibold text-[#2A2A2A] mb-3">{method.title}</h3>
                   <p className="text-[#2A2A2A] font-light">{method.description}</p>
                 </div>
+
               </motion.div>
             ))}
           </div>
