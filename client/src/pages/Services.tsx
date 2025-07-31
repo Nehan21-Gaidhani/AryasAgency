@@ -37,7 +37,7 @@ export default function Services() {
   ];
 
   return (
-    <div className="py-20 pt-32 bg-[#FFFDFD] min-h-screen">
+    <div className="py-20 pt-32 bg-[#FFFfff] min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-16"

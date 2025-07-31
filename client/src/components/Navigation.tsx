@@ -19,18 +19,19 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-4xl px-4">
-      <div className="floating-navbar bg-white rounded-2xl">
-        <div className="flex justify-between items-center px-6 py-2">
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <Link href="/">
-              <h2 className="text-xl font-bold text-[#4B1A1A] cursor-pointer">
+    <nav className="fixed top z-50 w-full">
+      <div className="bg-white shadow-lg">
+        <div className="flex justify-between items-center px-6 py-2.5">
+          <Link href="/" className="flex justify-between items-center">
+              <img
+                src="./assets/logo.png"
+                alt="Logo"
+                className="mr-3 w-8 h-8"
+              />
+              <h2 className="text-xl font-bold text-[#3d3d3d] cursor-pointer">
                 Aryas Agency
               </h2>
             </Link>
-          </div>
-
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <div className="flex items-center space-x-6">
@@ -39,8 +40,8 @@ export default function Navigation() {
                   <span
                     className={`px-3 py-2 font-medium transition-colors duration-200 cursor-pointer rounded-lg ${
                       isActive(item.path)
-                        ? "text-[#4B1A1A] bg-[#F5C6C6]/30"
-                        : "text-[#2A2A2A] hover:text-[#4B1A1A] hover:bg-[#F5C6C6]/20"
+                        ? "text-[#000000] bg-[#Ffe9d9]"
+                        : "text-[#2A2A2A] hover:text-[#000000] hover:bg-[#Ffe9d9]"
                     }`}
                   >
                     {item.name}
@@ -51,7 +52,7 @@ export default function Navigation() {
 
             {/* Contact Button (now acts as a link) */}
             <Link href="/contact">
-              <Button className="bg-[#BA0000] text-[#fceeee] px-6 border-2 border-[#BA0000] py-2 rounded-lg hover:bg-[#FFE7E7] hover:text-[#BA0000] hover:border-[#BA0000] transition-colors duration-200">
+              <Button className="bg-[#ff7000] text-[#ffffff] px-6 border-2 border-[#ff7000] py-2 rounded-lg hover:bg-[#ffffff] hover:text-[#ff7000] hover:border-[#ff7000] transition-colors duration-200">
                 Contact
               </Button>
             </Link>

@@ -2,8 +2,8 @@ import { Facebook, Twitter, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#BA0000] text-[#FFFFFF] py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="bg-[#1a1a1a] text-[#FFFFFF] py-16">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top grid section */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           
@@ -51,7 +51,7 @@ export default function Footer() {
 
               <div className="flex items-center">
                 <Mail className="text-[#FFFFFF] mr-3" size={16} />
-                <span>aryas.rahul@gmail.com</span>
+                <span>hr@aryasagency.in</span>
               </div>
 
               <div className="flex items-start">
@@ -80,8 +80,8 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-[#F5C6C6] mt-12 pt-8 text-center">
-          <p className="text-[#FFE7E7] opacity-80 font-light text-sm">
+        <div className="border-t border-[#8d8d8d] mt-12 pt-8 text-center">
+          <p className="text-[#FFffff] opacity-80 font-light text-sm">
             © 2024 Aryas Agency. All rights reserved. | Proprietor: Rahul Vaidya
           </p>
         </div>
