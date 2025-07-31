@@ -64,9 +64,9 @@ export default function Navigation() {
               variant="ghost"
               size="icon"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-[#2A2A2A] hover:text-[#4B1A1A]"
+              className="text-[#ffffff] bg-[#ff7000]"
             >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {isMenuOpen ? <X size={24} /> : <Menu size={36} />}
             </Button>
           </div>
         </div>
@@ -80,8 +80,8 @@ export default function Navigation() {
                   <span
                     className={`block px-3 py-2 text-base font-medium transition-colors duration-200 cursor-pointer rounded-lg ${
                       isActive(item.path)
-                        ? "text-[#4B1A1A] bg-[#F5C6C6]/30"
-                        : "text-[#2A2A2A] hover:text-[#4B1A1A] hover:bg-[#F5C6C6]/20"
+                        ? "text-[#2a2a2a] bg-[#ffe9d9]"
+                        : "text-[#2A2A2A] hover:text-[#2a2a2a] hover:bg-[#Ffe9d9]"
                     }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -94,7 +94,7 @@ export default function Navigation() {
               <div className="pt-2">
                 <Link href="/contact">
                   <Button
-                    className="w-full bg-[#4b1a1a] text-[#fceeee] hover:bg-[#FFE7E7] hover:text-[#BA0000]"
+                    className="w-full bg-[#ff7000] text-[#ffffff] hover:bg-[#ff5000] hover:text-[#ffffff]"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Contact
