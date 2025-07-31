@@ -21,30 +21,36 @@ export default function Contact() {
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setLoading(true);
-    setSuccessMsg("");
-    setErrorMsg("");
+  e.preventDefault();
+  setLoading(true);
+  setSuccessMsg("");
+  setErrorMsg("");
 
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+  try {
+    const res = await fetch("https://arya-agency-backend.vercel.app/send_mail", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        Name: formData.name,
+        email: formData.email,
+        contact: formData.contact,
+        interestedArea: formData.interest,
+      }),
+    });
 
-      if (res.ok) {
-        setSuccessMsg("Your message has been sent successfully.");
-        setFormData({ name: "", email: "", contact: "", interest: "" });
-      } else {
-        setErrorMsg("Failed to send message. Please try again.");
-      }
-    } catch (err) {
-      setErrorMsg("Something went wrong. Please try again later.");
-    } finally {
-      setLoading(false);
+    if (res.ok) {
+      setSuccessMsg("Your message has been sent successfully.");
+      setFormData({ name: "", email: "", contact: "", interest: "" });
+    } else {
+      setErrorMsg("Failed to send message. Please try again.");
     }
-  };
+  } catch (err) {
+    setErrorMsg("Something went wrong. Please try again later.");
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   return (
     <div className="bg-[#FFFDFD] overflow-x-hidden min-h-screen pt-14">
