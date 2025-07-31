@@ -37,7 +37,7 @@ export default function Home() {
     <div className="bg-[#FFFDFD] overflow-x-hidden">
       {/* Hero Section */}
       <section className="min-h-screen bg-[#ffffff] flex items-center">
-        <div className=" mx-auto w-full pt-12">
+        <div className="mx-auto w-full pt-24 sm:pt-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center px-8">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -146,7 +146,6 @@ export default function Home() {
                   <h3 className="text-xl font-semibold text-[#2A2A2A] mb-3">{method.title}</h3>
                   <p className="text-[#2A2A2A] font-light">{method.description}</p>
                 </div>
-
               </motion.div>
             ))}
           </div>
