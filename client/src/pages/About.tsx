@@ -29,7 +29,7 @@ export default function About() {
 
   return (
     <div className="py-20 bg-white min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-[80px]">
+      <div className="max-w-7xl mx-auto px-8 sm:px-8 lg:px-8 pt-12">
         {/* Company History Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
           <motion.div
@@ -84,7 +84,7 @@ export default function About() {
           <img
             src="/assets/ownerpic.jpg"
             alt="Owner"
-            className="w-80 h-80 rounded-full object-cover object-top shadow-2xl"
+            className="w-80 h-80 max-w-full max-h-[20rem] rounded-full object-cover object-top shadow-2xl"
           />
           <div className="text-center lg:text-left max-w-2xl">
             <h3 className="text-3xl font-bold text-[#2A2A2A] mb-4">Mr. Rahul Vaidya</h3>
