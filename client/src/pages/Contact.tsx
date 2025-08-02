@@ -55,7 +55,7 @@ export default function Contact() {
   return (
     <div className="bg-[#FFFDFD] overflow-x-hidden min-h-screen pt-14">
       <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12">
+        <div className="max-w-6xl mx-auto px-8 sm:px-8 lg:px-12">
           {/* Hero */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
